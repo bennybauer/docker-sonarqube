@@ -1,5 +1,5 @@
-FROM dockerfile/java
-MAINTAINER spiddy <d.kapanidis@gmail.com>
+FROM java:7
+MAINTAINER bennybauer <bennybauer@gmail.com>
 
 RUN echo "deb http://downloads.sourceforge.net/project/sonar-pkg/deb binary/" >> /etc/apt/sources.list
 RUN apt-get update && apt-get clean ### Sonar version 5.1 - timestamp
